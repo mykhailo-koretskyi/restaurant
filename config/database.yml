@@ -13,8 +13,8 @@ default: &default
   adapter: mysql2
   encoding: utf8
   pool: 5
-  username: root
-  password:
+  username: cc
+  password: story
   host: localhost
 
 development:
@@ -50,5 +50,5 @@ test:
 production:
   <<: *default
   database: box_production
-  username: box
+  username: cc
   password: <%= ENV['BOX_DATABASE_PASSWORD'] %>
