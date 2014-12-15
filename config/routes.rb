@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
 
-  root 'landing#index'
-
   namespace :configuration do
+    root 'landing#index'
     resources :sections
   end
+
+  root 'landing#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

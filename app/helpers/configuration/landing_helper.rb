@@ -1,0 +1,2 @@
+module Configuration::LandingHelper
+end
