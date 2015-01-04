@@ -1,0 +1,23 @@
+<table class="table table-hover">
+  <thead>
+  <tr>
+    <th>#</th>
+    <th>Table name</th>
+    <th>Start time</th>
+    <th>End time</th>
+    <th>Links</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @reservations.each do |reserv| %>
+      <tr scope="row">
+        <th><%= reserv.id %></th>
+        <td><%= reserv.table.name %></td>
+        <td><%= reserv.start_time %></td>
+        <td><%= reserv.end_time %></td>
+        <td><% if session[:user_id] == reserv.user.id%><%= link_to 'Delete reservation', reserv,  method: :delete,
+                                                                   data: { confirm: 'Are you sure?' } %><% end %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>

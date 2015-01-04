@@ -12,4 +12,8 @@ Rails.application.config.assets.precompile += %w(
     landing.js landing.css
     configuration/sections.js configuration/sections.css
     configuration/landing.js configuration/landing.css
+    login.js login.css
+    signup.js signup.css
+    tables.js tables.css
+    reservations.js reservations.css
 )

@@ -1,0 +1,9 @@
+<h1>Signup form</h1>
+<%= form_tag('/signup', :method => "POST", :class => "form") do %>
+  <div class="input-group">
+    <input type="text" class="form-control" placeholder="login" name="username" autofocus="true" required>
+    <input type="password" class='form-control' placeholder="password" name="password" required>
+    <input type="password" class="form-control" placeholder="Confirm password" name="passwordConfirmation" required>
+    <button type="submit" class="btn btn-success">Sign Up</button>
+  </div>
+<% end %>
